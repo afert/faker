@@ -21,9 +21,7 @@ function checkField()
 
     	    $("form").submit(function(e){
     		e.preventDefault(); });
-    	    if($('.alert.alert-danger')){
-    	   		alert('YO');
-    	   		$('.alert.alert-danger').hide(4000);
+
     	   		
     	   }
     }

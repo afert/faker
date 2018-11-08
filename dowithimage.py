@@ -73,7 +73,7 @@ def doWithTrumpSign(page1,page2):
 
 
 
-	im.paste( ImageOps.colorize(wPage1, (0,0,0), (0,0,0)), (77,133),  wPage1)
+	im.paste( ImageOps.colorize(wPage1, (0,0,0), (0,0,0)), (500,400),  wPage1)
 	im.paste( ImageOps.colorize(wPage2, (0,0,0), (0,0,0)), (77,162),  wPage2)
 
 	im.save('static/image/trump/sample-out.jpg')
