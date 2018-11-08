@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+<!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/css.css" >
+   
+
+    <title>Fake boarding pass generator</title>
+  </head>
+  <body>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<!--     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+
+    <script src="static/js/jquery-3.3.1.slim.min.js" ></script>
+    <script src="static/js/popper.min.js"></script>
+    <script src="static/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    
+
+
+
+    <div class="container">
+
+
+
+</div>
+
+    <div class="fix-top"><h2>Fake boarding pass generator</h2></div>
+    <div class="main-pic"><img src="static/image/boardingpass/photo8jpg.jpg" class="img-responsive"  width='100%' ></div>
+
+    <form method='post' action='/do_boardingpass'>
+    <div>
+      <span >Name</span>
+      <input class='myinput' type="text" placeholder=" Enter Your Name. " name="name" required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"   maxLength="35">
+    </div>
+<!-- 判断是否是字母 -->
+<!--     <div>
+      <span >Name</span>
+      <input class='myinput' type="text" placeholder=" Enter Your Name. " name="name"  pattern="^[A-Za-z\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"   maxLength="35">
+    </div> -->
+    <hr/>
+    <div>
+      <span >Flight</span>
+      <input class='myinput' type="text" placeholder=" Enter Your flight.Like, LA 205." name="flight"  required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}" maxLength="30">
+    </div>
+    <hr/>
+    <div>
+      <span >Date</span> 
+      <input class='myinput' type="text" placeholder=" Enter the date.Like, 03OCT." name="date"  required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"  maxLength="30" >
+    </div>
+    <hr/>
+    <div>
+      <span >From</span>
+      <input class='myinput' type="text" placeholder=" From city " name="from" required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}" maxLength="35" >
+    </div>
+    <hr/>
+    <div>
+      <span >To</span>
+      <input class='myinput' type="text" placeholder=" To city " name="to"  required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}" maxLength="35" >
+    </div>
+    <hr/>
+    <button type="submit" class="btn btn-primary " >Generate</button>
+    <hr/>
+   </form>
+
+
+
+
+
+    
+    
+
+  </body>
+</html>

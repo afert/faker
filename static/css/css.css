@@ -1,0 +1,50 @@
+.row{
+
+	background-color: white;
+	padding: 5px;
+	margin: 10px;
+}
+.col-sm{
+
+	padding:30px;
+	margin: 10px;
+	background-color: #e3e3e3e3;
+	text-align: center;
+}
+.title{
+
+	margin-top: 20px;
+	
+}
+.fix-top{
+
+	background-color: #50b0e7;
+	text-align: center;
+	padding: 3px;
+	color: white;
+
+}
+.main-pic{
+
+	margin: 10px 0px 10px 0px;
+	text-align: center;
+}
+
+
+.myinput{
+
+  border-style: ridge;
+  width:100%;
+  /*text-transform:uppercase;*/
+
+}
+.btn{
+
+
+	width:100%;
+}
+.textpage{
+
+	width:100%;
+	border-style: ridge;
+}
