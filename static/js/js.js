@@ -11,7 +11,7 @@ function checkField()
     else if(page1.match(letterNumber) && !page2.match(letterNumber)){
 
     	// $('#page2').after(' <div class="alert alert-danger" role="alert"> <strong>Oh snap!</strong> Change a few things up and try submitting again.</div>');
-    		$('#page2tip').hide(10000);
+    		
     	    $("form").submit(function(e){
     		e.preventDefault(); });
     	    
