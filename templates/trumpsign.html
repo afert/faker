@@ -60,7 +60,10 @@
       <hr/>
 <!--       <input class='myinput' type="text" placeholder=" Enter Your flight.Like, LA 205." name="flight"  required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
     onchange="try{setCustomValidity('')}catch(e){}" maxLength="30"> -->
-    <textarea name='page1' id='page1' class="textpage" rows="5" placeholder="The content in the page 1"  required    ></textarea>
+<!--     <textarea name='page1' id='page1' class="textpage" rows="5" placeholder="The content in the page 1"  required  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"    ></textarea> -->
+    <input class='myinput' type="text" placeholder=" The content of page 1 " name="page1" required="required"  pattern="^[A-Za-z0-9,.!'\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"   maxLength="200">
     </div>
    <!--  <div class="alert alert-danger" role="alert" > <strong>Oh snap!</strong> Change a few things up and try submitting again.</div> -->
     <hr/>
@@ -69,7 +72,9 @@
       <hr/>
 <!--       <input class='myinput' type="text" placeholder=" Enter Your flight.Like, LA 205." name="flight"  required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
     onchange="try{setCustomValidity('')}catch(e){}" maxLength="30"> -->
-    <textarea name='page2'id='page2' class="textpage" rows="5"  placeholder="The content in the page 2" required   ></textarea>
+    <!-- <textarea name='page2'id='page2' class="textpage" rows="5"  placeholder="The content in the page 2" required   ></textarea>\ -->
+    <input class='myinput' type="text" placeholder=" The content of page 2 " name="page2" required="required"  pattern="^[A-Za-z0-9\s]+$" oninvalid="setCustomValidity('Letters only please! ')"
+    onchange="try{setCustomValidity('')}catch(e){}"   maxLength="200">
     </div>
 <!--     <div class="alert alert-danger" role="alert"  id='page2tip'> <strong>Oh snap!</strong> Change a few things up and try submitting again.</div> -->
     <hr/>
